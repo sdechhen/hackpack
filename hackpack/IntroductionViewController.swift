@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  IntroductoinViewController.swift
 //  hackpack
 //
 //  Created by Dechhen Sherpa on 1/10/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class IntroductionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

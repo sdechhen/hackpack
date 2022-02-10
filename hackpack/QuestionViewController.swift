@@ -65,11 +65,46 @@ class QuestionViewController: UIViewController {
     ]
     
     var questionIndex = 0
+    var answersChosen: [Answer] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
     }
+    
+    func nextQuestion(){
+        questionIndex += 1
+            if questionIndex < questions.count {
+                updateUI()
+            } else {
+                performSegue(withIdentifier: "Results",sender: nil)
+            }
+    }
+    
+    @IBSegueAction func showResults(_ coder: NSCoder) -> ResultsViewController? {
+        return ResultsViewController(coder: coder, responses:
+               answersChosen)
+    }
+    
+    @IBAction func answerButtonPressed(_ sender: UIButton) {
+        let currentAnswers = questions[questionIndex].answers
+        
+            switch sender {
+            case button1:
+                answersChosen.append(currentAnswers[0])
+            case button2:
+                answersChosen.append(currentAnswers[1])
+            case button3:
+                answersChosen.append(currentAnswers[2])
+            case button4:
+                answersChosen.append(currentAnswers[3])
+            default:
+                break
+            }
+        
+            nextQuestion()
+        }
+    
     
     func updateUI() {
         singleStackView.isHidden = false
@@ -90,15 +125,6 @@ class QuestionViewController: UIViewController {
         button3.setTitle(answers[2].text, for: .normal)
         button4.setTitle(answers[3].text, for: .normal)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+

@@ -151,7 +151,7 @@
                         <outlet property="questionLabel" destination="mwR-Y9-bFB" id="iGk-Ie-ZfB"/>
                         <outlet property="questionProgressView" destination="xq7-iH-sPT" id="8bg-8z-QKg"/>
                         <outlet property="singleStackView" destination="N3W-sO-T5x" id="fJ3-p6-fWh"/>
-                        <segue destination="2al-Am-XWP" kind="presentation" destinationCreationSelector="showResults:" id="PRb-Zd-Owf"/>
+                        <segue destination="2al-Am-XWP" kind="presentation" identifier="ResultsSegue" destinationCreationSelector="showResults:" id="PRb-Zd-Owf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ju3-Sj-vGb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -167,16 +167,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2LF-br-b6m">
-                                <rect key="frame" x="20" y="381" width="374" height="80.5"/>
+                                <rect key="frame" x="20" y="390.5" width="374" height="61.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec7-vV-0zz">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec7-vV-0zz">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEd-ah-X0Q">
-                                        <rect key="frame" x="0.0" y="60" width="374" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="41" width="374" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -203,6 +203,10 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="Ec7-vV-0zz" id="7nG-ip-agp"/>
+                        <outlet property="resultDescriptionLabel" destination="XEd-ah-X0Q" id="x5H-5s-TQq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m5D-6e-daz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

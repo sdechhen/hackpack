@@ -16,6 +16,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button4: UIButton!
     @IBOutlet weak var questionProgressView: UIProgressView!
+    
     var questions: [Question] = [
       Question(
         text: "What's your dream vacation?",
@@ -77,13 +78,12 @@ class QuestionViewController: UIViewController {
             if questionIndex < questions.count {
                 updateUI()
             } else {
-                performSegue(withIdentifier: "Results",sender: nil)
+                performSegue(withIdentifier: "ResultsSegue",sender: nil)
             }
     }
     
     @IBSegueAction func showResults(_ coder: NSCoder) -> ResultsViewController? {
-        return ResultsViewController(coder: coder, responses:
-               answersChosen)
+        return ResultsViewController(coder: coder, responses: answersChosen)
     }
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {

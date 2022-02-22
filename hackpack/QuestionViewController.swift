@@ -92,12 +92,64 @@ class QuestionViewController: UIViewController {
             switch sender {
             case button1:
                 answersChosen.append(currentAnswers[0])
+                if (questionIndex == 0){
+                    
+                }else if (questionIndex == 1){
+                    
+                }else if (questionIndex == 2){
+                    
+                }else if (questionIndex == 3){
+                    
+                }else if (questionIndex == 4){
+                    
+                }else {
+                    
+                }
             case button2:
                 answersChosen.append(currentAnswers[1])
+                if (questionIndex == 0){
+                    
+                }else if (questionIndex == 1){
+                    
+                }else if (questionIndex == 2){
+                    
+                }else if (questionIndex == 3){
+                    
+                }else if (questionIndex == 4){
+                    
+                }else {
+                    
+                }
             case button3:
                 answersChosen.append(currentAnswers[2])
+                if (questionIndex == 0){
+                    
+                }else if (questionIndex == 1){
+                    
+                }else if (questionIndex == 2){
+                    
+                }else if (questionIndex == 3){
+                    
+                }else if (questionIndex == 4){
+                    
+                }else {
+                    
+                }
             case button4:
                 answersChosen.append(currentAnswers[3])
+                if (questionIndex == 0){
+                    
+                }else if (questionIndex == 1){
+                    
+                }else if (questionIndex == 2){
+                    
+                }else if (questionIndex == 3){
+                    
+                }else if (questionIndex == 4){
+                    
+                }else {
+                    
+                }
             default:
                 break
             }
@@ -125,6 +177,7 @@ class QuestionViewController: UIViewController {
         button3.setTitle(answers[2].text, for: .normal)
         button4.setTitle(answers[3].text, for: .normal)
     }
+    
 }
 
 

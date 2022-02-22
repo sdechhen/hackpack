@@ -29,6 +29,7 @@ class ResultsViewController: UIViewController {
     }
     
     func calculatePersonalityResult(){
+        /*
         let frequencyOfAnswers = responses.reduce(into: [:]) {
             (counts, answer) in
                 counts[answer.type, default: 0] += 1
@@ -39,10 +40,12 @@ class ResultsViewController: UIViewController {
         })
         
         let mostCommonAnswer = frequentAnswersSorted.first!.key
+        */
+        let maxValue = tally.max { a, b in a.value < b.value }
+        let frequent = maxValue!.key
+        resultAnswerLabel.text = "You are \(frequent.rawValue)!"
         
-        resultAnswerLabel.text = "You are \(mostCommonAnswer.rawValue)!"
-        
-        resultDescriptionLabel.text = mostCommonAnswer.definition
+        resultDescriptionLabel.text = frequent.definition
     }
     
 }

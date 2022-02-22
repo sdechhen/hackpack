@@ -17,8 +17,14 @@ struct Answer {
     var type: Teacher
 }
 
+//var tranchida = 0, shaw = 0, gru = 0, kaplan = 0, docRob = 0, stanek = 0, francis = 0, johnson = 0, ruocco = 0, diNardo = 0, casper = 0, flan = 0, canterino = 0, loomis = 0, ek = 0, wright = 0 , fitz = 0, baal = 0, klimenko = 0, moriarty = 0, lobko = 0
+
+//var tally : [Int] = [tranchida, shaw, gru, kaplan, docRob, stanek, francis, johnson, ruocco, diNardo, casper, flan, canterino, loomis, ek, wright, fitz, baal, klimenko, moriarty, lobko]
+
+var tally: [Teacher : Int] = [.tranchida : 0, .shaw : 0, .kaplan : 0, .stanek : 0, .francis : 0, .johnson : 0, .ruocco : 0, .diNardo : 0, .casper : 0, .flan : 0, .canterino : 0, .ek : 0, .fitz : 0, .baal : 0, .klimenko : 0, .moriarty : 0, .lobko : 0]
+
 enum Teacher: String {
-    case tranchida = "Ms. Tranchida", shaw = "Mr. Shaw", gru = "Mr. Gruenberg", kaplan = "Ms. Kaplan", docRob = "Doc Rob", stanek = "Ms. Stanek", francis = "Mr. Francis", johnson = "Ms. Johnson", ruocco = "Mr. Ruocco", diNardo = "Ms. DiNardo", casper = "Ms. Casper", flan = "Mr. Flanigan", canterino = "Mr. Canterino", loomis = "Mr. Loomis", ek = "Ms. Ek", wright = "Mr. Wright", fitz = "Mr. Fitzpatrick", baal = "Ms. Baal", klimenko = "Mr. Klimenko", moriarty = "Ms. Moriarty", lobko = "Mr. Lobko", clark = "Mr. Clark"
+    case tranchida = "Ms. Tranchida", shaw = "Mr. Shaw", kaplan = "Ms. Kaplan", stanek = "Ms. Stanek", francis = "Mr. Francis", johnson = "Ms. Johnson", ruocco = "Mr. Ruocco", diNardo = "Ms. DiNardo", casper = "Ms. Casper", flan = "Mr. Flanigan", canterino = "Mr. Canterino", ek = "Ms. Ek", fitz = "Mr. Fitzpatrick", baal = "Ms. Baal", klimenko = "Mr. Klimenko", moriarty = "Ms. Moriarty", lobko = "Mr. Lobko"
 
     var definition: String{
         switch self {
@@ -26,11 +32,7 @@ enum Teacher: String {
             return ""
         case .shaw:
             return ""
-        case .gru:
-            return ""
         case .kaplan:
-            return ""
-        case .docRob:
             return ""
         case .stanek:
             return ""
@@ -54,15 +56,9 @@ enum Teacher: String {
             return ""
         case .lobko:
             return ""
-        case .clark:
-            return ""
         case .canterino:
             return ""
-        case .loomis:
-            return ""
         case .ek:
-            return ""
-        case .wright:
             return ""
         case .fitz:
             return ""

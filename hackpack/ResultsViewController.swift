@@ -43,7 +43,8 @@ class ResultsViewController: UIViewController {
         */
         let maxValue = tally.max { a, b in a.value < b.value }
         let frequent = maxValue!.key
-        resultAnswerLabel.text = "You are \(frequent.rawValue)!"
+        let percentage = maxValue!.value / tally.count
+        resultAnswerLabel.text = "You are \(percentage)% \(frequent.rawValue)!"
         
         resultDescriptionLabel.text = frequent.definition
     }

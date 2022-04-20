@@ -12,6 +12,9 @@ class ResultsViewController: UIViewController {
     @IBOutlet weak var resultAnswerLabel: UILabel!
     @IBOutlet weak var resultDescriptionLabel: UILabel!
     
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet weak var teacherImage: UIImageView!
+    
     var responses : [Answer]
     
     init?(coder: NSCoder, responses: [Answer]) {
@@ -43,10 +46,38 @@ class ResultsViewController: UIViewController {
         */
         let maxValue = tally.max { a, b in a.value < b.value }
         let frequent = maxValue!.key
-        let percentage = maxValue!.value / tally.count
-        resultAnswerLabel.text = "You are \(percentage)% \(frequent.rawValue)!"
-        
+        resultAnswerLabel.text = "You are \(frequent.rawValue)!"
         resultDescriptionLabel.text = frequent.definition
+        //done button clicked
+        if doneButton.isSelected{
+            
+        }
+        //setting correct teacher image
+        if frequent.rawValue == "Ms. Baal" {
+            teacherImage.image = UIImage(named: "unnamed-2")
+        }else if frequent.rawValue == "Ms. Kaplan"{
+            teacherImage.image = UIImage(named: "unnamed-4")
+        }else if frequent.rawValue == "Ms. Tranchida"{
+            teacherImage.image = UIImage(named: "unnamed-5")
+        }else if frequent.rawValue == "Ms. Moriarty"{
+            teacherImage.image = UIImage(named: "unnamed-6")
+        }else if frequent.rawValue == "Mr. Flanigan"{
+            teacherImage.image = UIImage(named: "unnamed-7")
+        }else if frequent.rawValue == "Mr. Canterino"{
+            teacherImage.image = UIImage(named: "unnamed-8")
+        }else if frequent.rawValue == "Mr. Shaw"{
+            teacherImage.image = UIImage(named: "unnamed-10")
+        }else if frequent.rawValue == "Ms. DiNardo"{
+            teacherImage.image = UIImage(named: "unnamed-9")
+        }else if frequent.rawValue == "Mr. Lobko"{
+            teacherImage.image = UIImage(named: "unnamed-11")
+        }else if frequent.rawValue == "Ms. Ek"{
+            teacherImage.image = UIImage(named: "unnamed-12")
+        }else if frequent.rawValue == "Mr. Ruocco"{
+            teacherImage.image = UIImage(named: "unnamed-13")
+        }else if frequent.rawValue == "Mr. Fitzpatrick"{
+            teacherImage.image = UIImage(named: "unnamed")
+        }
     }
     
 }

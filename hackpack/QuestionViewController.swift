@@ -148,98 +148,196 @@ class QuestionViewController: UIViewController {
             case button1:
                 answersChosen.append(currentAnswers[0])
                 if (questionIndex == 0){
-                    
+                    fitz += 1
+                    shaw += 1
+                    baal += 1
                 }else if (questionIndex == 1){
-                    
+                    lobko += 1
+                    diNardo += 1
                 }else if (questionIndex == 2){
-                    
+                    fitz += 1
+                    diNardo += 1
+                    moriarty += 1
                 }else if (questionIndex == 3){
-                    
+                    lobko += 1
+                    flan += 1
                 }else if (questionIndex == 4){
-                    
+                    tranchida += 1
+                    kaplan += 1
                 }else if (questionIndex == 5){
-                
+                    ek += 1
+                    canterino += 1
+                    baal += 1
                 }else if (questionIndex == 6){
-                
+                    diNardo += 1
                 }else if (questionIndex == 7){
+                    fitz += 1
                 }else if (questionIndex == 8){
+                    ek += 1
+                    shaw += 1
+                    moriarty += 1
+                    tranchida += 1
+                    baal += 1
                 }else if (questionIndex == 9){
+                    ek += 1
+                    lobko += 1
+                    flan += 1
+                    moriarty += 1
+                    baal += 1
                 }else if (questionIndex == 10){
-                }else if (questionIndex == 11){
-                    
                 }else {
                     
                 }
             case button2:
                 answersChosen.append(currentAnswers[1])
                 if (questionIndex == 0){
-                    
+                    diNardo += 1
+                    canterino += 1
                 }else if (questionIndex == 1){
-                    
+                    kaplan += 1
+                    baal += 1
                 }else if (questionIndex == 2){
-                    
+                    ruocco += 1
+                    ek += 1
+                    canterino += 1
+                    tranchida += 1
+                    kaplan += 1
                 }else if (questionIndex == 3){
-                    
+                    ruocco += 1
+                    diNardo += 1
+                    canterino += 1
+                    kaplan += 1
                 }else if (questionIndex == 4){
+                    fitz += 1
+                    flan += 1
+                    moriarty += 1
+                    baal += 1
                 }else if (questionIndex == 5){
-                
+                    diNardo += 1
                 }else if (questionIndex == 6){
-                
+                    fitz += 1
+                    shaw += 1
+                    canterino += 1
+                    flan += 1
+                    kaplan += 1
                 }else if (questionIndex == 7){
+                    shaw += 1
+                    flan += 1
+                    baal += 1
                 }else if (questionIndex == 8){
+                    fitz += 1
+                    diNardo += 1
+                    kaplan += 1
                 }else if (questionIndex == 9){
+                    diNardo += 1
                 }else if (questionIndex == 10){
-                }else if (questionIndex == 11){
-                    
+                    ruocco += 1
                 }else {
                     
                 }
             case button3:
                 answersChosen.append(currentAnswers[2])
                 if (questionIndex == 0){
-                    
+                    ruocco += 1
+                    ek += 1
+                    tranchida += 1
+                    kaplan += 1
                 }else if (questionIndex == 1){
-                    tally.updatevalue( 1, forKey: .ruocco)
-                    
+                    ruocco += 1
+                    fitz += 1
+                    ek += 1
+                    shaw += 1
+                    tranchida += 1
                 }else if (questionIndex == 2){
-                    
+                    lobko += 1
+                    baal += 1
                 }else if (questionIndex == 3){
-                    
+                    ek += 1
+                    moriarty += 1
+                    tranchida += 1
+                    baal += 1
                 }else if (questionIndex == 4){
+                    shaw += 1
                 }else if (questionIndex == 5){
-                
+                    kaplan += 1
                 }else if (questionIndex == 6){
-                
+                    tranchida += 1
+                    baal += 1
                 }else if (questionIndex == 7){
+                    ruocco += 1
                 }else if (questionIndex == 8){
+                    flan += 1
                 }else if (questionIndex == 9){
+                    fitz += 1
+                    shaw += 1
+                    kaplan += 1
                 }else if (questionIndex == 10){
-                }else if (questionIndex == 11){
-                    
+                    ek += 1
+                    lobko += 1
+                    shaw += 1
+                    canterino += 1
+                    flan += 1
+                    moriarty += 1
+                    tranchida += 1
                 }else {
                     
                 }
             case button4:
                 answersChosen.append(currentAnswers[3])
                 if (questionIndex == 0){
-                    
+                    lobko += 1
+                    flan += 1
+                    moriarty += 1
                 }else if (questionIndex == 1){
-                    
+                    canterino += 1
+                    flan += 1
+                    moriarty += 1
                 }else if (questionIndex == 2){
-                    
+                    shaw += 1
+                    flan += 1
                 }else if (questionIndex == 3){
-                    
+                    fitz += 1
+                    shaw += 1
                 }else if (questionIndex == 4){
+                    ruocco += 1
+                    ek += 1
+                    lobko += 1
+                    diNardo += 1
+                    canterino += 1
                 }else if (questionIndex == 5){
-                
+                    ruocco += 1
+                    fitz += 1
+                    lobko += 1
+                    shaw += 1
+                    flan += 1
+                    moriarty += 1
+                    tranchida += 1
                 }else if (questionIndex == 6){
-                
+                    ruocco += 1
+                    ek += 1
+                    lobko += 1
+                    moriarty += 1
                 }else if (questionIndex == 7){
+                    ek += 1
+                    lobko += 1
+                    diNardo += 1
+                    canterino += 1
+                    moriarty += 1
+                    tranchida += 1
+                    kaplan += 1
                 }else if (questionIndex == 8){
+                    ruocco += 1
+                    lobko += 1
+                    canterino += 1
                 }else if (questionIndex == 9){
+                    ruocco += 1
+                    canterino += 1
+                    tranchida += 1
                 }else if (questionIndex == 10){
-                }else if (questionIndex == 11){
-                    
+                    fitz += 1
+                    diNardo += 1
+                    kaplan += 1
+                    baal += 1
                 }else {
                     
                 }
@@ -265,6 +363,7 @@ class QuestionViewController: UIViewController {
     
     func updateStack(using answers: [Answer]) {
         singleStackView.isHidden = false
+        questionLabel.text = questions[questionIndex].text
         button1.setTitle(answers[0].text, for: .normal)
         button2.setTitle(answers[1].text, for: .normal)
         button3.setTitle(answers[2].text, for: .normal)

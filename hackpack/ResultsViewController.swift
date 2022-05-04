@@ -11,6 +11,9 @@ class ResultsViewController: UIViewController {
 
     @IBOutlet weak var resultAnswerLabel: UILabel!
     
+    @IBSegueAction func funSegue(_ coder: NSCoder) -> FunViewController? {
+        return FunViewController(coder: coder)
+    }
     @IBAction func share(_ sender: UIButton) {
         let image = teacherImage
                let imageToShare = [ image! ]

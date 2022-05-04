@@ -10,8 +10,15 @@ import UIKit
 class ResultsViewController: UIViewController {
 
     @IBOutlet weak var resultAnswerLabel: UILabel!
-    @IBOutlet weak var resultDescriptionLabel: UILabel!
     
+    @IBAction func share(_ sender: UIButton) {
+        let image = teacherImage
+               let imageToShare = [ image! ]
+               let activityViewController = UIActivityViewController(activityItems: imageToShare, applicationActivities:  nil)
+               activityViewController.popoverPresentationController?.sourceView = self.view
+               // present the view controller
+               self.present(activityViewController, animated: true, completion: nil)
+    }
     @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var teacherImage: UIImageView!
     
@@ -46,8 +53,7 @@ class ResultsViewController: UIViewController {
         */
         let maxValue = tally.max { a, b in a.value < b.value }
         let frequent = maxValue!.key
-        resultAnswerLabel.text = "You are \(frequent.rawValue)!"
-        resultDescriptionLabel.text = frequent.definition
+        resultAnswerLabel.text = "\(frequent.definition)!"
         //done button clicked
         if doneButton.isSelected{
             

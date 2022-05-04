@@ -16,7 +16,6 @@
 		506BDFBB2790AA5800B1ACE8 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506BDFBA2790AA5800B1ACE8 /* QuestionViewController.swift */; };
 		506BDFBD2790AA6B00B1ACE8 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506BDFBC2790AA6B00B1ACE8 /* ResultsViewController.swift */; };
 		506BDFBF27986B3000B1ACE8 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506BDFBE27986B3000B1ACE8 /* Question.swift */; };
-		50832C5327FB1E2D007A73C9 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50832C5227FB1E2D007A73C9 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		506BDFBA2790AA5800B1ACE8 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		506BDFBC2790AA6B00B1ACE8 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		506BDFBE27986B3000B1ACE8 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		50832C5227FB1E2D007A73C9 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Game.swift; path = ../../CH2/ApplePie/ApplePie/Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +69,6 @@
 				506BDFBE27986B3000B1ACE8 /* Question.swift */,
 				506BDFBA2790AA5800B1ACE8 /* QuestionViewController.swift */,
 				506BDFBC2790AA6B00B1ACE8 /* ResultsViewController.swift */,
-				50832C5227FB1E2D007A73C9 /* Game.swift */,
 				5030A07B278CB2E800BA3B50 /* Assets.xcassets */,
 				5030A07D278CB2E800BA3B50 /* LaunchScreen.storyboard */,
 				5030A080278CB2E800BA3B50 /* Info.plist */,
@@ -150,7 +147,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50832C5327FB1E2D007A73C9 /* Game.swift in Sources */,
 				5030A077278CB2E400BA3B50 /* IntroductionViewController.swift in Sources */,
 				5030A073278CB2E400BA3B50 /* AppDelegate.swift in Sources */,
 				506BDFBB2790AA5800B1ACE8 /* QuestionViewController.swift in Sources */,
